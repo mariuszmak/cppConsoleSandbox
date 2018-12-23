@@ -3,11 +3,8 @@
 
 #include "pch.h"
 #include <iostream>
-
-int main()
-{
-    std::cout << "Hello World!\n"; 
-}
+#include <string>
+using namespace std;
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
@@ -19,3 +16,15 @@ int main()
 //   4. Use the Error List window to view errors
 //   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
 //   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+
+void writeReadConsole(string msg) {
+	cout << msg << "\n";
+	char response[256];
+	cin.get(response, 255);
+	cout << "Echoing: " << response << "\n";
+}
+
+int main() {
+	writeReadConsole("Hello World!");
+
+}
