@@ -2,6 +2,7 @@
 //
 
 #include "pch.h"
+#include "asynchron.h"
 #include "threading.h"
 #include "structure.h"
 #include <iostream>
@@ -25,12 +26,17 @@ void echoConsoleInput(string msg);
 int main(int argc, char** argv) {
 	cout << "Main: argc=" << argc << " , argv=" << argv[0] << endl;
 	//echoConsoleInput("Write something interesting.");
+	std::cout << "Console Application - Starting...\n\n";
+
+	tryAsync();			
 	//tryList();
-	trySort();
+	//trySort();
 	//tryLinkedList();
 	//tryVector();
 	//tryDeque();
 	//trySimpleMultithread();
+	
+	std::cout << "\nConsole Application - Exiting...\n";
 	return 0;
 }
 
