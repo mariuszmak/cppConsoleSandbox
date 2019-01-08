@@ -29,11 +29,13 @@ int main(int argc, char** argv) {
 	std::cout << "Console Application - Starting...\n\n";
 
 	tryAsync();			
+	
 	//tryList();
 	//trySort();
 	//tryLinkedList();
 	//tryVector();
 	//tryDeque();
+
 	//trySimpleMultithread();
 	
 	std::cout << "\nConsole Application - Exiting...\n";
